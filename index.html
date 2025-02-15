@@ -281,7 +281,7 @@
     <div class="reset">
         <button id="open">Open Envelope</button>
         <button id="reset">Close Envelope</button>
-        <a href="Flower2.html"><button onclick="music()">💐</button></a>
+         <a href="Flower2.html"><button onclick="music()">💐</button></a>
     </div>
     <audio id="bgMusic" src="https://voca.ro/1gXiAFCnLEkv"></audio>
 
@@ -304,7 +304,10 @@
                 envelope.removeClass("open").addClass("close");
             }
         });
-        var audioPlaying = false;
+        
+    </script>
+    <script>
+      var audioPlaying = false;
         function music(){
           var audio = document,getElementById("bgMusic");
           if (!audioPlaying) audio.play();
@@ -313,6 +316,7 @@
           
           
         }
+      
     </script>
 </body>
 </html>
