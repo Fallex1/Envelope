@@ -281,8 +281,9 @@
     <div class="reset">
         <button id="open">Open Envelope</button>
         <button id="reset">Close Envelope</button>
-        <a href="Flower2.html"><button>💐</button></a>
+        <a href="Flower2.html"><button onclick="music()">💐</button></a>
     </div>
+    <audio id="bgMusic" src="musik.mp3"></audio>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
@@ -303,6 +304,15 @@
                 envelope.removeClass("open").addClass("close");
             }
         });
+        var audioPlaying = false;
+        function music(){
+          var audio = document,getElementById("bgMusic");
+          if (!audioPlaying) audio.play();
+          else audio.pause();
+          audioPlaying = !audioPlaying;
+          
+          
+        }
     </script>
 </body>
 </html>
